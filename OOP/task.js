@@ -199,3 +199,29 @@ let v1 = new Vehicle("Car");
 v1.setType("Bike");
 
 console.log(v1.getType());
+
+
+
+
+//Vehicle:
+class Vehicle {
+    #type;
+
+    constructor(type) {
+        this.#type = type;
+    }
+
+    setType(type) {
+        this.#type = type;
+    }
+
+    getType() {
+        return this.#type;
+    }
+}
+
+let v1 = new Vehicle("Car");
+
+v1.setType("Bike");
+
+console.log(v1.getType());
