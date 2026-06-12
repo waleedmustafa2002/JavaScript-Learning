@@ -225,3 +225,32 @@ let v1 = new Vehicle("Car");
 v1.setType("Bike");
 
 console.log(v1.getType());
+
+
+
+
+
+//person class:
+
+// Person:
+class Person {
+    #name;
+
+    constructor(name) {
+        this.#name = name;
+    }
+
+    setName(name) {
+        this.#name = name;
+    }
+
+    getName() {
+        return this.#name;
+    }
+}
+
+let p1 = new Person("Alice");
+
+p1.setName("Bob");
+
+console.log(p1.getName());
