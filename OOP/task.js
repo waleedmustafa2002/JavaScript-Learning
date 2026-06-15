@@ -15,7 +15,7 @@ class BankAccount {
   }
 }
 
-let acc = new BankAccount(1000);
+let acc = new BankAccount(1000)
 
 acc.deposit(500);
 console.log(acc.getBalance());
@@ -254,3 +254,25 @@ let p1 = new Person("Alice");
 p1.setName("Bob");
 
 console.log(p1.getName());
+
+//Bank Account:
+class BankAccount {
+  #balance;   
+
+  constructor(balance) {
+    this.#balance = balance;
+  }
+
+  deposit(amount) {
+    this.#balance += amount;
+  }
+
+  getBalance() {
+    return this.#balance;
+  }
+}
+
+let acc = new BankAccount(1000);
+
+acc.deposit(500);
+console.log(acc.getBalance());
