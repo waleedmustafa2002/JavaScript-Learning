@@ -296,7 +296,7 @@ class BankAccountTEST {
   }
 }
 
-let acc = new BankAccountTEST(2000);
+let acc = new BankAccountTEST(4555);
 
 acc.deposit(500);
 console.log(acc.getBalance());
