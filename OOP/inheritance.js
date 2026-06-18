@@ -1,99 +1,165 @@
-class Person {
-    speak() {
-        console.log("Person is speaking");
+// class Person {
+//     speak() {
+//         console.log("Person is speaking");
+//     }
+// }
+
+// class Student extends Person {
+//     study() {
+//         console.log("Student is studying");
+//     }
+// }
+
+// let s1 = new Student();
+
+// s1.speak();
+// s1.study();
+
+
+
+
+
+
+// class Animal {
+//     eat() {
+//         console.log("Animal is eating");
+//     }
+// }
+
+// class Cat extends Animal {
+//     meow() {
+//         console.log("Cat says Meow");
+//     }
+// }
+
+// let c1 = new Cat();
+
+// c1.eat();
+// c1.meow();
+
+
+
+
+
+// class Vehicle {
+//     start() {
+//         console.log("Vehicle started");
+//     }
+// }
+
+// class Bike extends Vehicle {
+//     ride() {
+//         console.log("Bike is riding");
+//     }
+// }
+
+// let b1 = new Bike();
+
+// b1.start();
+// b1.ride();
+
+
+
+
+// //Constructor Inheritance
+
+// class Person {
+//     constructor(name) {
+//         this.name = name;
+//     }
+// }
+
+// class Student extends Person {
+// }
+
+// let s1 = new Student("Ali");
+
+// console.log(s1.name);
+
+
+
+
+
+// class Person {
+//     constructor(name) {
+//         this.name = name;
+//     }
+// }
+
+// class Student extends Person {
+//     constructor(name, grade) {
+//         super(name);
+//         this.grade = grade;
+//     }
+// }
+
+// let s1 = new Student("Ali", "A");
+
+// console.log(s1.name);
+// console.log(s1.grade);
+
+
+
+
+//Single Inheritence task:
+
+class Animal{
+eat()
+{
+    console.log("Animal is eating");
+}
+
+}
+class Dog extends Animal{
+    bark()
+    {
+        console.log("Dog is barking")
+
     }
 }
 
-class Student extends Person {
-    study() {
-        console.log("Student is studying");
+let d1=new Dog();
+d1.eat();
+d1.bark();
+
+
+
+class Vehicle{
+    start()
+    {
+        console.log("Vehicle started")
     }
 }
+class car extends Vehicle{
+drive()
+{
+    console.log("Car is driving")
+}
 
-let s1 = new Student();
+}
+let c1=new car();
 
-s1.speak();
-s1.study();
-
-
-
+c1.start();
+c1.drive();
 
 
 
-class Animal {
-    eat() {
-        console.log("Animal is eating");
+
+class Employee{
+    work()
+    {
+        console.log("Employee is working")
     }
 }
-
-class Cat extends Animal {
-    meow() {
-        console.log("Cat says Meow");
+class Manager extends Employee{
+    manage()
+    {
+        console.log("Manager is managing")
     }
 }
+let m1= new Manager();
 
-let c1 = new Cat();
-
-c1.eat();
-c1.meow();
-
+m1.work();
+m1.manage();
 
 
-
-
-class Vehicle {
-    start() {
-        console.log("Vehicle started");
-    }
-}
-
-class Bike extends Vehicle {
-    ride() {
-        console.log("Bike is riding");
-    }
-}
-
-let b1 = new Bike();
-
-b1.start();
-b1.ride();
-
-
-
-
-//Constructor Inheritance
-
-class Person {
-    constructor(name) {
-        this.name = name;
-    }
-}
-
-class Student extends Person {
-}
-
-let s1 = new Student("Ali");
-
-console.log(s1.name);
-
-
-
-
-
-class Person {
-    constructor(name) {
-        this.name = name;
-    }
-}
-
-class Student extends Person {
-    constructor(name, grade) {
-        super(name);
-        this.grade = grade;
-    }
-}
-
-let s1 = new Student("Ali", "A");
-
-console.log(s1.name);
-console.log(s1.grade);
