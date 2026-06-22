@@ -100,6 +100,49 @@
 
 
 
+
+// //Constructor Inheritance
+
+// class Person {
+//     constructor(name) {
+//         this.name = name;
+//     }
+// }
+
+// class Student extends Person {
+// }
+
+// let s1 = new Student("Ali");
+
+// console.log(s1.name);
+
+
+
+
+
+// class Person {
+//     constructor(name) {
+//         this.name = name;
+//     }
+// }
+
+// class Student extends Person {
+//     constructor(name, grade) {
+//         super(name);
+//         this.grade = grade;
+//     }
+// }
+
+// let s1 = new Student("Ali", "A");
+
+// console.log(s1.name);
+// console.log(s1.grade);
+
+
+
+//Multilevel inheritance
+
+
 // //Multilevel inheritance
 
 // class Person {
@@ -181,7 +224,17 @@ s1.study();
 
 t1.speak();
 t1.teach();
+class Monitor extends Student {
+    manageClass() {
+        console.log("Monitor is managing class");
+    }
+}
 
+let m1 = new Monitor();
+
+m1.speak();
+m1.study();
+m1.manageClass();
 
 
 
@@ -211,3 +264,26 @@ m1.manage();
 
 d1.work();
 d1.code();
+class Vehicle {
+    start() {
+        console.log("Vehicle started");
+    }
+}
+
+class Car extends Vehicle {
+    drive() {
+        console.log("Car is driving");
+    }
+}
+
+class SportsCar extends Car {
+    turbo() {
+        console.log("Turbo mode ON");
+    }
+}
+
+let s1 = new SportsCar();
+
+s1.start();
+s1.drive();
+s1.turbo();
