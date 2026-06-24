@@ -100,31 +100,31 @@
 
 
 
-//Multilevel inheritance
+// //Multilevel inheritance
 
-class Person {
-    speak() {
-        console.log("Person is speaking");
-    }
-}
+// class Person {
+//     speak() {
+//         console.log("Person is speaking");
+//     }
+// }
 
-class Student extends Person {
-    study() {
-        console.log("Student is studying");
-    }
-}
+// class Student extends Person {
+//     study() {
+//         console.log("Student is studying");
+//     }
+// }
 
-class Monitor extends Student {
-    manageClass() {
-        console.log("Monitor is managing class");
-    }
-}
+// class Monitor extends Student {
+//     manageClass() {
+//         console.log("Monitor is managing class");
+//     }
+// }
 
-let m1 = new Monitor();
+// let m1 = new Monitor();
 
-m1.speak();
-m1.study();
-m1.manageClass();
+// m1.speak();
+// m1.study();
+// m1.manageClass();
 
 
 
@@ -151,3 +151,4 @@ let s1 = new SportsCar();
 s1.start();
 s1.drive();
 s1.turbo();
+
